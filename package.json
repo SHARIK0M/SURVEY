@@ -1,0 +1,21 @@
+{
+  "name": "survey-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd backend && npm install && npm run build && cd ../frontend && npm install && npm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "install-deps": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
